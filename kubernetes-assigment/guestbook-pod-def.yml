@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gbook-fe
+  labels:
+    name: gbook-fe
+    app: gbook-app
+
+
+spec:
+  containers:
+    - name: gbook-fe
+     image: kubernetes/guestbook:v2
+     ports:
+       - containerPort: 3000
